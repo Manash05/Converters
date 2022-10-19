@@ -1,3 +1,5 @@
+// Temperature unit converter using C
+
 #include <stdio.h>
 
 int main()
@@ -7,7 +9,7 @@ int main()
 
     printf("\n\t--TEMPERATURE CONVERTER--\n");
     
-    repeat = 1;
+    repeat = 1;       // Loop
 
     while (repeat == 1){
 
@@ -36,7 +38,8 @@ int main()
 
             // Fahrenheit to celsius conversion formula 
             celsius = (fahrenheit - 32) * 5 / 9;
-
+            
+            // Decimal precision - upto two decimal points
             printf("\n%.2f Fahrenheit = %.2f Celsius\n", fahrenheit, celsius);       
         }
 
