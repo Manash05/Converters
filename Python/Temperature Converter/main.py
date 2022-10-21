@@ -1,20 +1,22 @@
+// Temperature converter using Python
+
 
 print("\t--TEMPERATURE CONVERTER--")
 
 repeat = 1
-while (repeat == 1):
+while repeat == 1:        # Loop
     choice = int(input("\nEnter '1' for the temperature conversion from CELSIUS to FAHRENHEIT\n"
                         "Enter '2' for the temperature conversion from FAHRENHEIT to CELSIUS\n"
                         "Enter you choice: "))
     
-    if (choice == 1):
+    if choice == 1:
         celsius= float(input("Enter the temperature in Celsius: "))
-        fahrenheit = (celsius * 9 / 5) + 32
+        fahrenheit = (celsius * 9 / 5) + 32         # Fahrenheit to Celsius conversion formula
         print(celsius, "Celsius =", fahrenheit, "Fahrenheit")
         
-    elif (choice == 2):
+    elif choice == 2:
         fahrenheit= float(input("Enter the temperature in Fahrenheit: "))
-        celsius = (fahrenheit - 32) * 5 / 9
+        celsius = (fahrenheit - 32) * 5 / 9         # Celsius to Fahrenheit conversion formula
         print(fahrenheit, "Fahrenheit =", celsius, "Celsius")
         
     else:
@@ -24,7 +26,7 @@ while (repeat == 1):
                          "Enter '2' to exit.\n"
                          "Enter your choice: "))
    
-if (repeat == 2):
+if repeat == 2:
     print("\n\t--Thank You--\n")
     
 else:
