@@ -1,7 +1,9 @@
+# Temperature converter using PYTHON
+
 print("\t--TEMPERATURE CONVERTER--\n")
 
 repeat = 1
-while repeat == 1:
+while repeat == 1:          # Loop
     initial = int(input("Enter the unit of temperature you want to convert from the following:\n"
                         "1. Celsius.\n"
                         "2. Fahrenheit.\n"
@@ -11,7 +13,7 @@ while repeat == 1:
                         "6. Rankine.\n"
                         "7. Réaumur.\n"
                         "8. Rømer.\n"
-                        "Enter your choice: "))
+                        "Enter your choice: "))         # Taking user input of unit for the conversion
 
     final = int(input("\nEnter the unit of temperature into which you want to convert from the following:\n"
                       "1. Celsius.\n"
@@ -22,16 +24,15 @@ while repeat == 1:
                       "6. Rankine.\n"
                       "7. Réaumur.\n"
                       "8. Rømer.\n"
-                      "Enter your choice: "))
+                      "Enter your choice: "))           # Taking user input of unit into which conversion will be done
 
     if initial == 1:
-        celsius = float(input("\nEnter the temperature in CELSIUS: "))
-
+        celsius = float(input("\nEnter the temperature in CELSIUS: "))              # User input
         if final == 1:
             print(f"\n\t{celsius} celsius = {celsius} celsius")
         elif final == 2:
-            fahrenheit = (celsius * 9 / 5) + 32
-            print(f"\n\t{celsius} celsius = {fahrenheit} fahrenheit")
+            fahrenheit = (celsius * 9 / 5) + 32         # Conversion formula
+            print(f"\n\t{celsius} celsius = {fahrenheit} fahrenheit")               # Result print
         elif final == 3:
             kelvin = celsius + 273.15
             print(f"\n\t{celsius} celsius = {kelvin} kelvin")
@@ -52,7 +53,7 @@ while repeat == 1:
             print(f"\n\t{celsius} celsius = {romer} romer")
 
     elif initial == 2:
-        fahrenheit = float(input("\nEnter the temperature in FAHRENHEIT: "))
+        fahrenheit = float(input("\nEnter the temperature in FAHRENHEIT: "))        # User input
         if final == 1:
             celsius = (fahrenheit - 32) * (5 / 9)
             print(f"\n\t{fahrenheit} fahrenheit = {celsius} celsius")
@@ -78,7 +79,7 @@ while repeat == 1:
             print(f"\n\t{fahrenheit} fahrenheit = {romer} romer")
 
     elif initial == 3:
-        kelvin = float(input("\nEnter the temperature in KELVIN: "))
+        kelvin = float(input("\nEnter the temperature in KELVIN: "))                # User input
         if final == 1:
             celsius = kelvin - 273.15
             print(f"\n\t{kelvin} kelvin = {celsius} celsius")
@@ -104,7 +105,7 @@ while repeat == 1:
             print(f"\n\t{kelvin} kelvin = {romer} romer")
 
     elif initial == 4:
-        delisle = float(input("\nEnter the temperature in DELISLE: "))
+        delisle = float(input("\nEnter the temperature in DELISLE: "))              # User input
         if final == 1:
             celsius = (delisle + 100) / 1.5
             print(f"\n\t{delisle} delisle = {celsius} celsius")
@@ -130,7 +131,7 @@ while repeat == 1:
             print(f"\n\t{delisle} delisle = {romer} romer")
 
     elif initial == 5:
-        newton = float(input("\nEnter the temperature in NEWTON: "))
+        newton = float(input("\nEnter the temperature in NEWTON: "))                # User input
         if final == 1:
             celsius = newton * (100 / 33)
             print(f"\n\t{newton} newton = {celsius} celsius")
@@ -156,7 +157,7 @@ while repeat == 1:
             print(f"\n\t{newton} newton = {romer} romer")
 
     elif initial == 6:
-        rankine = float(input("\nEnter the temperature in RANKINE: "))
+        rankine = float(input("\nEnter the temperature in RANKINE: "))              # User input
         if final == 1:
             celsius = (rankine - 491.67) / 1.8
             print(f"\n\t{rankine} rankine = {celsius} celsius")
@@ -182,7 +183,7 @@ while repeat == 1:
             print(f"\n\t{rankine} rankine = {romer} romer")
 
     elif initial == 7:
-        reaumur = float(input("\nEnter the temperature in REAUMUR: "))
+        reaumur = float(input("\nEnter the temperature in REAUMUR: "))              # User input
         if final == 1:
             celsius = reaumur * (5 / 4)
             print(f"\n\t{reaumur} reaumur = {celsius} celsius")
@@ -208,7 +209,7 @@ while repeat == 1:
             print(f"\n\t{reaumur} reaumur = {romer} romer")
 
     elif initial == 8:
-        romer = float(input("\nEnter the temperature in ROMER: "))
+        romer = float(input("\nEnter the temperature in ROMER: "))                  # User input
         if final == 1:
             celsius = (romer - 7.5) * 1.90476190476
             print(f"\n\t{romer} romer = {celsius} celsius")
@@ -236,5 +237,5 @@ while repeat == 1:
     repeat = int(input("\nEnter\n"
                        "'1' to continue\n"
                        "'2' to exit\n"))
-    if repeat == 2:
+    if repeat == 2:             # Loop breaks
         print("\n\t--THANK YOU--")
