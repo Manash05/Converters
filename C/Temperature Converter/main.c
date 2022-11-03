@@ -1,3 +1,5 @@
+// Temperature converter using C
+
 #include <stdio.h>
 
 int main()
@@ -8,7 +10,8 @@ int main()
     printf("\n\t--TEMPERATURE CONVERTER--\n");
     
     repeat = 1;     
-    while (repeat == 1){
+    // Loop
+    while (repeat == 1){       
 
         printf("\nEnter the unit of temperature you want to convert from the following:\n"
                         "1. Celsius.\n"
@@ -36,13 +39,13 @@ int main()
 
         if (initial == 1){
             printf("\nEnter the temperature in CELSIUS: ");
-            scanf("%f", &celsius);
+            scanf("%f", &celsius);                     // User input
             
             if (final == 1){
                 printf("\n\t%f celsius = %f celsius\n", celsius, celsius);
             }
             else if (final == 2){
-                fahrenheit = (celsius * 1.8) + 32; 
+                fahrenheit = (celsius * 1.8) + 32;     // Conversion formula 
                 printf("\n\t%f celsius = %f fahrenheit\n", celsius, fahrenheit);
             }
             else if (final == 3){
@@ -335,7 +338,7 @@ int main()
         printf("\nEnter\n"
         "'1' to continue\n"
         "'2' to exit:\n");
-        scanf("%d", &repeat);
+        scanf("%d", &repeat);          // Loop ends
 
         if (repeat == 2){
             printf("\n\t--THANK YOU--\n");
